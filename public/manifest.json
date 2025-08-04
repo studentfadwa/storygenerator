@@ -1,0 +1,52 @@
+{
+  "short_name": "قصص",
+  "name": "مولّد صفحات القصص",
+  "description": "أنشئ قصصًا مصورة وساحرة. يمكنك إنشاء قصص متعددة الصفحات مع الصور والنصوص التي ترفعها، وتخصيص الألوان، وتصديرها إلى PDF أو Word.",
+  "lang": "ar",
+  "id": "./?id=a-shalhoub-storybook-generator-v1",
+  "icons": [
+    {
+      "src": "./icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./screenshots/screenshot1.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "صفحة العنوان وتصميم القصة"
+    },
+    {
+      "src": "./screenshots/screenshot2.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "إنشاء صفحة جديدة بالذكاء الاصطناعي"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "orientation": "portrait-primary",
+  "theme_color": "#78350f",
+  "background_color": "#78350f",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}

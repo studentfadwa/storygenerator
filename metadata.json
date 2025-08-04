@@ -1,0 +1,6 @@
+{
+  "name": "test",
+  "description": "An application to create decorated, horizontal storybook pages. The user can upload images, write captions, customize colors, and build a beautiful story page by page.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

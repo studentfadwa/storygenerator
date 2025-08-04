@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- PWA and Mobile Meta Tags -->
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+    
+    <title>مولّد صفحات القصص</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&family=Markazi+Text:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v5.0.5/dist/tesseract.min.js"></script>
+    <style>
+      body {
+        font-family: 'Cairo', sans-serif;
+      }
+      .font-amiri {
+        font-family: 'Amiri', serif;
+      }
+      .font-cairo {
+        font-family: 'Cairo', sans-serif;
+      }
+      .font-tajawal {
+        font-family: 'Tajawal', sans-serif;
+      }
+      .font-markazi {
+        font-family: 'Markazi Text', serif;
+      }
+      /* Styles for export mode to create a clean output */
+      .export-mode .no-export {
+        display: none !important;
+      }
+      .export-mode .white-box-for-export {
+        /* Hide the interactive editing border and shadow during export */
+        border: none !important;
+        box-shadow: none !important;
+      }
+       .export-mode .resize-handle {
+        /* Hide resize handles during export */
+        display: none !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "docx": "https://esm.sh/docx@^8.5.0",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.12.0",
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@^4.4.171",
+    "pdfjs-dist/build/pdf.worker.mjs": "https://esm.sh/pdfjs-dist@^4.4.171/build/pdf.worker.mjs",
+    "@mlc-ai/web-llm": "https://esm.sh/@mlc-ai/web-llm@0.2.51"
+  }
+}
+</script>
+<link rel="stylesheet" href="./index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
